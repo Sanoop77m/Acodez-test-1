@@ -28,7 +28,6 @@ const sideMenuItems = [
     ],
   },
 ];
-const tableData = {};
 function Dashboard() {
   const [sideMenuActive, setSideMenuActive] = useState(false);
   return (
