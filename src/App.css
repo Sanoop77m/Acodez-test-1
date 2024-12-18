@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.color-grey{
+  color: #707070;
+}
+
+/* header */
+
+.header-container {
+  height: 4rem;
+  background-color: #1976D2;
+  padding: 0 1.5rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 8px;
+}
+.header-left-cont {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+.user-icon {
+  background-color: rgb(189,189,189);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dashboard */
+
+.dashboard-cont {
+  display: flex;
+  height: calc(100vh - 4rem);
+}
+.dashboard-left-section {
+  width: 15%;
+  border-right: 1px solid #80808069;
+  padding: 1rem;
+}
+img.logo-icon {
+  width: 8rem;
+  margin-top: 1rem;
+}
+.side-menu {
+  margin-top: 2rem;
+}
+.side-menu h3{
+  width: 60%;
+}
+.side-menu-item {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-around;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.side-menu-item:hover ,.sub-menu-item:hover
+{
+  background-color: rgba(199, 191, 191, 0.171);
+}
+.sub-menu-list-container{
+  visibility: hidden;
+
+}
+.sub-menu-list-active{
+  visibility: visible;
+}
+.sub-menu-item {
+  display: flex;
+  padding: 0 0 0 4rem;
+  gap: 2rem;
+  height: 2rem;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.dashboard-right-section {
+  width: 85%;
+  padding: 4rem 3rem;
+}
+.dashboard-right-section h1 {
+  font-size: 2.3rem;
+}
+.search-field{
+  width: 20rem !important;
+}
+.table-container {
+  margin-top: 3rem;
+  border: 1px solid rgb(204 204 204 / 76%);
+  border-top: 0;
+}
+.table-head-cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+button.create-new-btn {
+  width: 8rem;
+  height: 3rem;
+  background-color: white;
+  outline: none;
+  border: 1px solid #3587D8;
+  color: #3587D8;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button.create-new-btn:hover{
+  background-color: #3586d811;
+}
+.search-sec{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.filter-icon{
+  width: 1.4rem;
+  height: 1.4rem;
+}
+th {
+  text-align: left;
+}
+tr{
+height: 3.3rem;
+  border-bottom: 1px solid rgb(204 204 204 / 76%);
+}
+td{
+  padding: 1rem 0;
+}
+td.league-column{
+  display: flex;
+}
+thead{
+  border-bottom: 1px solid rgb(204 204 204 / 76%);
+  background-color: #F9F9FB;
+  height: 3.3rem;
+}
+th.header-column-Age {
+  width: 9rem;
+}
+th.header-column-Leagues.Played {
+  width: 24rem;
+}
+th.header-column-User {
+  width: 16rem;
+}
+th.header-column-Status {
+  width: 12rem;
+}
+.ovel-div {
+  width: max-content;
+  border-radius: 16px;
+  border: 1px solid rgb(204 204 204 / 76%);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
